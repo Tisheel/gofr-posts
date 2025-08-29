@@ -78,4 +78,9 @@ curl -X POST http://localhost:8000/posts \
 
 ## 📖 API Documentation
 
-You can visit /.well-known/swagger for API documentation.
+Interactive API documentation is available at:
+
+👉 [http://localhost:8000/.well-known/swagger](http://localhost:8000/.well-known/swagger)
+
+This Swagger UI provides a visual interface to explore and test all available endpoints directly from your browser.
+
