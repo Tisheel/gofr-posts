@@ -1,0 +1,17 @@
+CREATE DATABASE test_db;
+USE test_db;
+
+CREATE TABLE posts (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    body TEXT
+);
+
+CREATE TABLE comments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    postId INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    body TEXT NOT NULL,
+    FOREIGN KEY (postId) REFERENCES posts(id)
+);
